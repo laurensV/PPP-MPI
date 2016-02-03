@@ -64,7 +64,7 @@ int		ydim = 0;
 int 	num_processors;
 int 	my_id;
 long 	offset;
-long 	bodies_per_processor;
+long 	bodies_per_processor, my_bodies;
 
 void 
 check_MPI_error(int returnValue) 
@@ -96,7 +96,7 @@ compute_forces(void)
 	/* Incrementally accumulate forces from each body pair,
 	   skipping force of body on itself (c == b)
 	*/
-	for (b = offset; b < offset + bodies_per_processor; ++b){
+	for (b = offset; b < offset + my_bodies; ++b){
 		for (c = (b % 2); c < bodyCt; c = c + 2) {
 			if (c == b)	{
 				c++;
@@ -141,7 +141,7 @@ compute_velocities(void)
 	int b;
 
 	/* let each node calculate velocity for their own bodies */
-	for (b = offset; b < offset + bodies_per_processor; ++b) {
+	for (b = offset; b < offset + my_bodies; ++b) {
 		double xv = XV(b);
 		double yv = YV(b);
 		double force = sqrt(xv*xv + yv*yv) * FRICTION;
@@ -160,7 +160,7 @@ compute_positions(void)
 	int b;
 
 	/* let each node position velocity for their own bodies */
-	for (b = offset; b < offset + bodies_per_processor; ++b) {
+	for (b = offset; b < offset + my_bodies; ++b) {
 		double xn = X(b) + (XV(b) * DELTA_T);
 		double yn = Y(b) + (YV(b) * DELTA_T);
 
@@ -431,7 +431,9 @@ main(int argc, char **argv)
 	offset = bodies_per_processor * my_id;
 	/* range of bodies for last processor */
 	if ((bodies_per_processor + offset) > bodyCt) {
-		bodies_per_processor = bodyCt - offset;
+		my_bodies = bodyCt - offset;
+	} else {
+		my_bodies = bodies_per_processor;
 	}
 
 	/* Broadcast all bodies to all processors*/
