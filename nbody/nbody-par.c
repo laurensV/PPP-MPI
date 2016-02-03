@@ -467,7 +467,7 @@ main(int argc, char **argv)
 		YV(b) = bodies_collect[b].yv;
 	}
 
-	rtime = end - start;
+	rtime = end_time - start_time;
 	double longest_time;
 
 	/* root node gets time of the machine that took the longest */
