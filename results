@@ -1,149 +1,188 @@
 64 0 nbody.ppm 100000
 seq
-N-body took     30.312 seconds
-N-body took     30.335 seconds
-N-body took     30.292 seconds
+30.312
+30.335
+30.292
 par 1
-N-body took     30.582 seconds
-N-body took     30.586 seconds
-N-body took     30.583 seconds
+30.582
+30.586
+30.583
 par 2
-N-body took     16.304 seconds
-N-body took     23.752 seconds
-N-body took     23.745 seconds
+16.304
+23.752
+23.745
 par 4
-N-body took      9.573 seconds
-N-body took     13.418 seconds
-N-body took     13.364 seconds
+9.573
+13.418
+13.364
 par 8
-N-body took      6.691 seconds
-N-body took      8.640 seconds
-N-body took      8.591 seconds
+6.691
+8.640
+8.591
 par 16
-N-body took      6.647 seconds
-N-body took      6.848 seconds
-N-body took      6.652 seconds
+6.647
+6.848
+6.652
+
 128 0 nbody.ppm 100000
 seq
-N-body took    180.052 seconds
-N-body took    179.984 seconds
-N-body took    179.934 seconds
+180.052
+179.984
+179.934
 par 1
-N-body took    120.756 seconds
-N-body took    120.767 seconds
-N-body took    120.753 seconds
+120.756
+120.767
+120.753
 par 2
-N-body took     91.448 seconds
-N-body took     61.806 seconds
-N-body took     91.755 seconds
+91.448
+61.806
+91.755
 par 4
-N-body took     32.742 seconds
-N-body took     32.905 seconds
-N-body took     47.818 seconds
+32.742
+32.905
+47.818
 par 8
-N-body took     26.257 seconds
-N-body took     25.915 seconds
-N-body took     18.793 seconds
+26.257
+25.915
+18.793
 par 16
-N-body took     16.218 seconds
-N-body took     16.016 seconds
-N-body took     16.222 seconds
+16.218
+16.016
+16.222
+
 256 0 nbody.ppm 100000
 seq
-N-body took    474.721 seconds
-N-body took    712.822 seconds
-N-body took    474.925 seconds
+474.721
+712.822
+474.925
 par 1
-N-body took    479.904 seconds
-N-body took    479.727 seconds
-N-body took    479.903 seconds
+479.904
+479.727
+479.903
 par 2
-N-body took    242.607 seconds
-N-body took    362.710 seconds
-N-body took    242.482 seconds
+242.607
+362.710
+242.482
 par 4
-N-body took    182.067 seconds
-N-body took    183.322 seconds
-N-body took    184.112 seconds
+182.067
+183.322
+184.112
 par 8
-N-body took     65.041 seconds
-N-body took     95.149 seconds
-N-body took     95.264 seconds
+65.041
+95.149
+95.264
 par 16
-N-body took     50.506 seconds
-N-body took     51.817 seconds
-N-body took     50.438 seconds
+50.506
+51.817
+50.438
+
 100 0 nbody.ppm 100
 seq
-N-body took      0.110 seconds
-N-body took      0.073 seconds
-N-body took      0.073 seconds
+0.110
+0.073
+0.073
 par 1
-N-body took      0.074 seconds
-N-body took      0.111 seconds
-N-body took      0.111 seconds
+0.074
+0.111
+0.111
 par 2
-N-body took      0.039 seconds
-N-body took      0.057 seconds
-N-body took      0.057 seconds
+0.039
+0.057
+0.057
 par 4
-N-body took      0.040 seconds
-N-body took      0.041 seconds
-N-body took      0.040 seconds
+0.040
+0.041
+0.040
 par 8
-N-body took      0.043 seconds
-N-body took      0.038 seconds
-N-body took      0.042 seconds
+0.043
+0.038
+0.042
 par 16
-N-body took      0.080 seconds
-N-body took      0.065 seconds
-N-body took      0.079 seconds
+0.080
+0.065
+0.079
+
 1000 0 nbody.ppm 100
 seq
-N-body took      7.250 seconds
-N-body took     10.954 seconds
-N-body took     10.885 seconds
+7.250
+10.954
+10.885
 par 1
-N-body took      7.286 seconds
-N-body took      7.290 seconds
-N-body took     10.939 seconds
+7.286
+7.290
+10.939
 par 2
-N-body took      3.658 seconds
-N-body took      3.648 seconds
-N-body took      3.646 seconds
+3.658
+3.648
+3.646
 par 4
-N-body took      2.010 seconds
-N-body took      2.752 seconds
-N-body took      2.745 seconds
+2.010
+2.752
+2.745
 par 8
-N-body took      1.415 seconds
-N-body took      1.409 seconds
-N-body took      1.414 seconds
+1.415
+1.409
+1.414
 par 16
-N-body took      0.784 seconds
-N-body took      0.764 seconds
-N-body took      0.761 seconds
+0.784
+0.764
+0.761
+
 10000 0 nbody.ppm 100
 seq
-N-body took    725.704 seconds
-N-body took    725.278 seconds
-N-body took    725.450 seconds
+725.704
+725.278
+725.450
 par 1
-N-body took    730.461 seconds
-N-body took    730.893 seconds
+730.461
+730.893
 par 2
-N-body took    365.228 seconds
-N-body took    547.844 seconds
-N-body took    365.287 seconds
+365.228
+547.844
+365.287
 par 4
-N-body took    182.737 seconds
-N-body took    182.828 seconds
-N-body took    273.916 seconds
+182.737
+182.828
+273.916
 par 8
-N-body took    137.052 seconds
-N-body took    137.014 seconds
-N-body took    137.036 seconds
+137.052
+137.014
+137.036
 par 16
-N-body took     68.706 seconds
-N-body took     68.859 seconds
-N-body took     68.690 seconds
+68.706
+68.859
+68.690
+64 0 nbody.ppm 100000
+seq
+par 1
+par 2
+par 4
+par 8
+par 16
+128 0 nbody.ppm 100000
+seq
+par 1
+par 2
+par 4
+par 8
+par 16
+256 0 nbody.ppm 100000
+seq
+par 1
+par 2
+par 4
+par 8
+par 16
+100 0 nbody.ppm 100
+seq
+par 1
+par 2
+par 4
+par 8
+par 16
+1000 0 nbody.ppm 100
+seq
+par 1
+par 2
+par 4
+par 8

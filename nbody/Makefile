@@ -1,3 +1,5 @@
+all: nbody-seq nbody-par
+
 nbody-seq: nbody-seq.c
 	gcc -Wall -O3 -o nbody-seq nbody-seq.c -lm
 
