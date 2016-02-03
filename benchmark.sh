@@ -3,12 +3,12 @@ for config in "64 0 nbody.ppm 100000" "128 0 nbody.ppm 100000" "256 0 nbody.ppm 
 	echo $config >> results
 	echo seq >> results
 	for i in {1..3}; do
-		prun -v -1 -np 1 nbody/nbody-seq $config 2>&1 | grep seconds | cut -f4 -d" " >> results
+		prun -v -1 -np 1 nbody/nbody-seq $config 2>&1 | grep took >> results
 	done
 	for i in 1 2 4 8 16; do
 		echo par $i >> results
 		for j in {1..3}; do
-			prun -v -1 -np $i $PRUN_ETC/prun-openmpi nbody/nbody-par $config 2>&1 | grep seconds | cut -f4 -d" " >> results
+			prun -v -1 -np $i -sge-script $PRUN_ETC/prun-openmpi nbody/nbody-par $config 2>&1 | grep took >> results
 			wait
 		done
 	done

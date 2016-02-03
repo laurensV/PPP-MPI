@@ -1,1 +1,7 @@
-bin/nbody-sanity-check: 16: bin/nbody-sanity-check: prun: not found
+Reservation number 5434709: Reserved 2 hosts for 900 seconds 
+Run on 2 hosts for 960 seconds from Wed Feb  3 12:18:20 2016
+: node041/0 node035/0 
+my process id: 1 
+Running N-body with 32 bodies and 100000 steps and 2 processors
+my process id: 0 
+N-body took      4.723 seconds
